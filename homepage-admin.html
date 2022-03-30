@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <!-- insert stylesheets here -->
+    
+      
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+<link rel="stylesheet" href="Style.css">
+
+</head>
+<body>
+    <nav class="navbar navbar-light bg-light p-3">
+        <div class="d-flex col-12 col-md-3 col-lg-2 mb-2 mb-lg-0 flex-wrap flex-md-nowrap justify-content-between">
+            <a class="navbar-brand" href="homepage-admin.html">
+                <img src = "logo1.png"> Malayan Colleges Mindanao
+            </a>
+            <button class="navbar-toggler d-md-none collapsed mb-3" type="button" data-toggle="collapse" data-target="#sidebar" aria-controls="sidebar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        
+        <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                  Welcome, Admin
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <li><a class="dropdown-item" href="login.html">Sign out</a></li>
+                </ul>
+              </div>
+        </div>
+      </nav>
+
+      <div class="container-fluid">
+        <div class="row">
+            <nav id="sidebar" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+                <!-- sidebar content goes in here -->
+                <div class="position-sticky pt-md-5">
+                  <ul class="nav flex-column">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="student_management.html">
+                          <span class="ml-2">Student Management</span>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="course_management.html">
+                          <span class="ml-2">Course Management</span>
+                        </a>
+                      </li>
+                          
+                    </ul>
+                </div>
+            </nav>
+            <main class="col-md-9 ml-sm-auto col-lg-10 px-md-4 py-4">
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="homepage-admin.html">Home</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Overview</li>
+                </ol>
+              </nav>
+              <h1 class="h2">Dashboard</h1>
+
+              <div class="card">
+                <h5 class="card-header">Announcements</h5>
+                <div class="card-body">
+                  <h5 class="card-title">Faculty Meeting</h5>
+                  <p class="card-text">April 2,2022</p>
+                  <p class="card-text text-success">To all Teaching Faculty, There will be a meeting with regards to the CEA week that will take place. Please attend on time.</p>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Student Satisfaction Survey</h5>
+                  <p class="card-text">March 18 - Apr 22, 2022</p>
+                  <p class="card-text text-success">To all MCM Students, the Student Satisfaction Survey is now available. You may answer the survey through MCM Digital from March 18 - April 22, 2022.</p>
+                </div>
+              </div>
+              <br><div class="form-group">
+                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter Announcement Details Here">
+              </div>
+              <br><a class="btn btn-primary" href="#" role="button">Add </a>
+
+              <div class="card">
+                <h5 class="card-header">Reminders</h5>
+                <div class="card-body">
+                  <h5 class="card-title">Examinations on Week 8</h5>
+                  <p class="card-text">April 8,2022</p>
+                  <p class="card-text text-success"> Do not forgot to upload your examinations to your assigned subjects.</p>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Embedded Systems Synchronous Session</h5>
+                  <p class="card-text">April 2,2022</p>
+                  <p class="card-text text-success"> Please click on the link description to attend the meeting. <br><br>https://teams.microsoft.com/dl/launcher/launcher.html?url=%2F_%23%2Fl%2Fmeetup-join%2F19%3Ameeting_OTU1YzFjOTAtYjMxMS00ZWQzLWJlY2UtN2ZiMmI1MjFlYzVk%40thread.v2%2F0%3Fcontext%3D%257b%2522Tid%2522%253a%25229ddf6758-b8c5-4ce5-8bbf-f8c8cc9dd41d%2522%252c%2522Oid%2522%253a%2522edc9527f-b613-4912-9d39-89c5be8e2729%2522%257d%26anon%3Dtrue&type=meetup-join&deeplinkId=87d1393a-899f-460c-980e-9b57cb94415f&directDl=true&msLaunch=true&enableMobilePage=true&suppressPrompt=true</p>
+                </div>
+              </div>
+              <br><div class="form-group">
+                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter Announcement Details Here">
+              </div>
+              <br><a class="btn btn-primary" href="#" role="button">Add </a>
+            </main>
+        </div>
+      </div>
+    <!-- insert scripts here -->
+      
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+
+</body>
+</html>
